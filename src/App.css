@@ -1,0 +1,53 @@
+:root {
+  --MainBackground: radial-gradient(circle, #EEEEEE 60%, #EDEEF7 100%);;
+  --LightBackground:#EDEEF7;
+  --Font1: #7d6ca8;
+  --Font2: #7d6ca8;
+  --Font3: #7d6ca8;
+}
+
+body {
+  font-family: "Caviar dreams";
+  background: var(--MainBackground) !important;
+  color: var(--Font2) !important;
+  height: 100%;
+  width: 100%;
+  max-width: 100%;
+}
+.text-title {
+  font-family: "Gothic black";
+  letter-spacing: 0.3rem;
+  color:var(--Font1);
+  position:relative;
+  text-align: center;
+}
+.navbar {
+  justify-content: flex-start !important;
+}
+
+.t-btn{
+  position: fixed;
+  top:50%;
+  right: 3px;
+  width: 45px;
+  height: 45px;
+  border-radius:3rem !important;
+  border: none !important;
+  transform:rotate(-90deg);
+  z-index: 20;
+  box-shadow: 0px 0px 1px 2px var(--Font2)  inset;
+}
+.t-btn:hover{
+  transform:scale(1.2)!important;
+
+  }
+
+ @media (max-width: 768px){
+  .t-btn { 
+    box-shadow: 0px 0px 5px var(--Font3);
+    transform:rotate(-270deg);
+    right: 5px;
+    height: 25px;
+    width: 25px;
+  } 
+}
